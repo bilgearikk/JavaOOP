@@ -1,0 +1,15 @@
+Connection: Veritabanıyla bağlantıyı temsil eder.
+Statement: SQL sorgularını çalıştırmak için kullanılır.
+ResultSet: Sorgudan dönen verileri tutar.
+SQLException: Veritabanı işlemlerinde oluşabilecek hatalar için.
+
+connection: MySQL ile bağlantı kuracağın nesne.
+statement: SQL sorgularını çalıştırmak için.
+resultSet: SELECT sorgusunun döndürdüğü kayıtlar burada tutulacak.
+
+getConnection() → MySQL’e bağlanıyor.
+createStatement() → Sorguları çalıştırmak için Statement nesnesi oluşturuyor.
+executeQuery(...) → Verilen SQL sorgusunu çalıştırıyor, örnek: SELECT * FROM country.
+
+resultSet.next() → Sonraki satıra geçer, veri varsa true döner.
+getString("Name") → O satırdaki "Name" sütununun içeriğini alır (örneğin: "Turkey").
